@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body{
+       background-color: yellow;
+    }
+
+    div{
+        background-color: white;
+        width: 500px;
+        border: 50px solid black;
+        padding: 80px;
+        margin: 100px;
+    }
+
+
+
+
+
+</style>
+<body>
+    <center>
+
+    
+       <div>
+		<h1><p class="italic">Wizard Calculator</p></h1>
+		<form onsubmit="calculate(); return false">
+			<label for="number1">Enter number:</label>
+				<input type="number" id="number1" name="number1"><br>
+			<br>
+			<label for="number2">Enter number:</label>
+				<input type="number" id="number2" name="number2">
+			<br>
+			<br>
+			<input type="button" value="+" onclick="calculate('add')">
+			<input type="button" value="-" onclick="calculate('subtract')">
+			<input type="button" value="*" onclick="calculate('multiply')">
+			<input type="button" value="/" onclick="calculate('divide')">
+			<input type="button" value="Display All" onclick="calculate('display')">
+		</form>
+
+		<p>Result:<br><br><span id="result"></span></p>
+        
+	</div>  
+
+<script>
+	function calculate(operation){
+		var num1 = parseFloat(document.getElementById('number1').value);
+		var num2 = parseFloat(document.getElementById('number2').value);
+		var result;
+
+		if (isNaN(num1) || isNaN(num2)) {
+			result = "Please enter valid numbers!!";
+		} else {
+			if (operation === 'add') {
+				result = num1 + num2;
+			} else if (operation === 'subtract') {  
+				result = num1 - num2;
+			} else if (operation === 'multiply') {
+				result = num1 * num2;
+			} else if (operation === 'divide') {
+				if (num2 === 0) {
+					result = "cannot divide by zero";
+				} else {
+					result = num1 / num2;
+				}
+			} else if (operation === 'display') {
+				let addition = num1 + num2;
+				let subtraction = num1 - num2;
+				let multiplication = num1 * num2;
+				let division = num2 === 0 ? "Sorry, cannot divide by ZERO" : num1 / num2;
+
+				result = `
+					addition: ${addition} <br>
+					subtraction: ${subtraction} <br>
+					multiplication: ${multiplication} <br>
+					division: ${division} <br>
+				`;
+			}
+		}
+
+		document.getElementById('result').innerHTML = result;
+	}
+</script>
+</center>
+</body>
+</html>
+
+
+</body>
+</html>

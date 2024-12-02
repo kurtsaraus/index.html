@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(bg.jpg);
+    }
+    .dashboard{
+        border-style: groove;
+        height: 1000px;
+        background-color: lightseagreen;
+        }
+    .menu{
+        margin-top: -990px;
+        margin-left: 10px;
+        border-style: groove ;
+        width: 150px;
+        height: 200px;
+    }
+    .chain{
+        color: white;
+        font-size: 30px;
+        margin-left: 270px;
+        margin-top: -970px;
+    }
+    .warehouse{
+        color: white;
+        font-size: 30px;
+        margin-left: 630px;
+        margin-top: -60px;
+    }
+    .agent{
+        color: white;
+        font-size: 30px;
+        margin-left: 940px;
+        margin-top: -60px;
+    }
+    .view{
+        color: white;
+        font-size: 20px;
+        margin-left: 300px;
+        margin-top: 30px;
+    }
+
+    .today{
+        color: white;
+        font-size: 20px;
+        margin-left: 600px;
+        margin-top: -45px;
+    }
+
+    .week{
+        color: white;
+        font-size: 20px;
+        margin-left: 700px;
+        margin-top: -45px;
+    }
+
+    .month{
+        color: white;
+        font-size: 20px;
+        margin-left: 800px;
+        margin-top: -45px;
+    }
+
+    .year{
+        color: white;
+        font-size: 20px;
+        margin-left: 900px;
+        margin-top: -45px;
+    }
+    .ey1{
+        margin-left: 250px;
+        margin-top: -20px;
+
+    }
+    .ey2{
+        margin-left: 550px;
+        margin-top: -380px;
+
+    }
+    .ey3{
+        margin-left: 800px;
+        margin-top: -380px;
+
+    }
+
+    .retailer1{
+        color: white;
+        margin-left: 280px;
+        margin-top: -50px;
+        font-size: 20px;
+    }
+
+    .retailer2{
+        color: white;
+        margin-left: 530px;
+        margin-top: -10px;
+        font-size: 20px;
+    }
+    .retailer3{
+        color: white;
+        margin-left: 800px;
+        margin-top: -10px;
+        font-size: 20px;
+    }
+    .truck1{
+        margin-left: 310px;
+        margin-top: -50px;
+    }
+
+    .truck2{
+        margin-left: 570px;
+        margin-top: -50px;
+    }
+    .truck3{
+        margin-left: 820px;
+        margin-top: -50px;
+    }
+    .it{
+        color: white;
+        font-size: 20px;
+        margin-left: 335px;
+        margin-top: -50px;
+    }
+    .it1{
+        color: white;
+        font-size: 20px;
+        margin-left: 625px;
+        margin-top: -50px;
+    }
+    .it2{
+        color: white;
+        font-size: 20px;
+        margin-left: 870px;
+        margin-top: -50px;
+    }
+    .board{
+        border-style: solid;
+        height: 700px;
+        width: 300px;
+        background-color: darkolivegreen;
+        margin-left: 1030px;
+        margin-top: -400px;
+        border-color: white;
+        }
+
+    .trucks{
+        color: white;
+        font-size: 30px;
+        margin-left: 1130px;
+        margin-top: -720px;
+    }
+    .from{
+        color: white;
+        font-size: 16px;
+        margin-left: 1060px;
+        margin-top: -20px;
+    }
+    .completed{
+        color: white;
+        font-size: 30px;
+        margin-left: 1150px;
+        margin-top: -20px;
+    }
+    .completed1{
+        color: white;
+        font-size: 30px;
+        margin-left: 1150px;
+        margin-top: -20px;
+    }
+    .completed2{
+        color: white;
+        font-size: 30px;
+        margin-left: 1150px;
+        margin-top: -20px;
+    }
+        
+        
+    .complete{
+        color: white;
+        font-size: 25px;
+        margin-left: 1110px;
+        margin-top: -30px;
+    }
+    .sustain{
+        color: white;
+        font-size: 25px;
+        margin-left: 1110px;
+        margin-top: -30px;
+    }
+    .hour{
+        color: white;
+        font-size: 25px;
+        margin-left: 1110px;
+        margin-top: -30px;
+    }
+    .time{
+        color: white;
+        font-size: 20px;
+        margin-left: 1050px;
+        margin-top: 70px;
+    }
+    .hours{
+        color: white;
+        font-size: 50px;
+        margin-left: 1090px;
+        margin-top: -30px;
+    }
+    .timelapse{
+        margin-left: 1110px;
+        margin-top: -60px;
+    }
+    .stake{
+        margin-top: -330px;
+        margin-left: 300px;
+    }
+    .stake1{
+        margin-left: 570px;
+        margin-top: -150px;
+    }
+    .stake2{
+        margin-left: 830px;
+        margin-top: -150px;
+    }
+    .manager{
+        color: white;
+        font-size: 18px;
+        margin-top: -20px;
+        margin-left: 270px;
+    }
+    .manager1{
+        color: white;
+        font-size: 18px;
+        margin-top: -43px;
+        margin-left: 550px;
+    }
+    .truckdriver{
+        color: white;
+        font-size: 18px;
+        margin-top: -43px;
+        margin-left: 850px;
+    }
+    .menubar{
+        border-style: solid;
+        width: 200px;
+        height: 600px;
+        margin-top: -660px;
+        margin-left: 50px;
+        background-color: grey;
+        border-color: white;
+    }
+    .home{
+        font-size: 40px;
+        color: white;
+        margin-top: -550px;
+        margin-left: 70px;
+    }
+    .deals{
+        font-size: 40px;
+        color: white;
+       margin-left: 70px;
+       margin-top: 80px;
+    }
+    .tasks{
+        font-size: 40px;
+        color: white;
+        margin-left: 70px;
+        margin-top: 80px;
+    }
+    .Logout{
+        font-size: 40px;
+        color: white;
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+    
+    
+</style>     
+<body>
+
+    <div class="dashboard">
+    </div>
+
+  
+
+    <div class="chain">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <a href="#" class="w3-bar-item w3-button">Supply Chain Level</a> 
+    </div>
+
+    <div class="warehouse">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="#" class="w3-bar-item w3-button">Warehouse Level</a> 
+    </div>
+
+    <div class="agent">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="#" class="w3-bar-item w3-button">Intelligient Agent Level</a> 
+    </div>
+
+    <div class="view">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="#" class="w3-bar-item w3-button">Supply Chain Overview</a> 
+    </div>
+
+    <div class="today">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="#" class="w3-bar-item w3-button">Today</a> 
+    </div>
+
+    <div class="week">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="#" class="w3-bar-item w3-button">Week</a> 
+    </div>
+
+    <div class="month">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="#" class="w3-bar-item w3-button">Month</a> 
+    </div>
+
+    <div class="year">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="#" class="w3-bar-item w3-button">Year</a> 
+    </div>
+
+    <div class="ey1">
+        <img src="62.png" width="250px" height="200px">
+    </div>
+
+    <div class="retailer1">
+        <p>Retailer 1 Capacity</p>
+    </div>
+
+    <div class="truck1">
+        <img src="dd.png" width="150px" height="200px">
+    </div>
+
+    <div class="it">
+        <p>Truck 1</p>
+    </div>
+
+    <div class="ey2">
+        <img src="46.png" width="150px" height="150px">
+    </div>
+
+    <div class="retailer2">
+        <p>Warehouse Capacity</p>
+    </div>
+
+    <div class="truck2">
+        <img src="dd.png" width="150px" height="200px">
+    </div>
+
+    <div class="it1">
+        <p>Truck 2</p>
+    </div>
+
+    <div class="ey3">
+        <img src="33.png" width="150px" height="150px">
+    </div>
+
+    <div class="retailer3">
+        <p>Retailer 2 Capacity</p>
+    </div>
+
+    <div class="truck3">
+        <img src="dd.png" width="150px" height="200px">
+    </div>
+
+    <div class="it2">
+        <p>Truck 3</p>
+    </div>
+
+    <div class="board">
+    </div>
+
+    <div class="trucks">
+        <p>Truck 1</p>
+    </div>
+
+    <div class="from">
+        <p>From Supplier to Warehouse</p>
+    </div>
+
+    <div class="completed">
+        <p>72%</p>
+    </div>
+
+    <div class="complete">
+        <p>Completed</p>
+    </div>
+
+    <div class="completed1">
+        <p>76%</p>
+    </div>
+
+    <div class="sustain">
+        <p>Sustainability</p>
+    </div>
+
+    <div class="completed2">
+        <p>5.3h</p>
+    </div>
+
+    <div class="hour">
+        <p>Total hours</p>
+    </div>
+    
+    <div class="time">
+        <p>Time to reach warehouse</p>
+    </div>
+
+    <div class="hours">
+        <p>1h 08m</p>
+    </div>
+
+    <div class="timelapse">
+        <img src="timebg.png" width="150px" height="150px">
+    </div>
+
+    <div class="stake">
+        <img src="stake.png" width="150px" height="150px">
+    </div>
+
+    <div class="stake1">
+        <img src="stake.png" width="150px" height="150px">
+    </div>
+
+    <div class="stake2">
+        <img src="stake.png" width="150px" height="150px">
+    </div>
+
+    <div class="manager">
+        <p>Supply Chain Manager</p>
+    </div>
+
+    <div class="manager1">
+        <p>Warehouse manager</p>
+    </div>
+
+    <div class="truckdriver">
+        <p>Truck driver</p>
+    </div>
+
+    <div class="menubar">
+    </div>
+
+    <div class="home">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="project.html" class="w3-bar-item w3-button">Home</a> 
+    </div>
+
+    <div class="deals">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="#" class="w3-bar-item w3-button">Deals</a> 
+    </div>
+
+    <div class="tasks">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="#" class="w3-bar-item w3-button">Tasks</a> 
+    </div>
+
+    <div class="Logout">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <a href="login.html" class="w3-bar-item w3-button">Log Out</a> 
+    </div>
+
+
+
+    
+
+
+    
+    
+</body>
+</html>
